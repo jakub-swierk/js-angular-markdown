@@ -2,30 +2,6 @@
     <head>
         <meta charset="utf-8" />
         <script src="bundle.js"></script>
-        <style>
-            body {
-                margin: 1em;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                background: #fafafa;
-                color: #555;
-                font-family: sans-serif;
-            }
-
-            h1 {
-                color: #000;
-            }
-
-            markdown {
-                padding: 0 2em;
-                margin: 0 auto;
-                max-width: 78em;
-                background: #fff;
-                box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-            }
-        </style>
     </head>
     <body ng-controller="ExampleApplication as app">
         <markdown options="{sanitize: true}" content="'# Hello world\nIts angular 1.5 **markdown** component in live action.'" ng-cloak>

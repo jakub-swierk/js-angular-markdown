@@ -20,7 +20,7 @@ const module = angular.module('example', [markdown]);
 
 module.component('example', {
     template: `
-        <markdown content="$ctrl.content" options="$ctrl.options">Fallback</markdown>
+        <markdown content="$ctrl.content" options="$ctrl.options"></markdown>
     `,
     controller: class {
         constructor(){
@@ -33,8 +33,6 @@ module.component('example', {
 export default module.name;
 
 ```
-
-There's also added simpler example in repository.
 
 ## License
 
