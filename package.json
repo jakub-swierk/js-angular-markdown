@@ -14,7 +14,7 @@
   ],
   "scripts": {
     "example": "npm run compile; browserify example/example.js -o example/bundle.js -t [babelify --presets [ es2015 ] ]",
-    "compile": "browserify src/index.js -o lib/index.js -s angular-markdown -x angular -t [babelify --presets [ es2015 ] ]; uglifyjs lib/index.js -o lib/index.js --no-mangle",
+    "compile": "mkdir -p lib; browserify src/index.js -o lib/index.js -s angular-markdown -x angular -t [babelify --presets [ es2015 ] ]; uglifyjs lib/index.js -o lib/index.js --no-mangle",
     "prepublish": "npm run compile"
   },
   "devDependencies": {
